@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template-004</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="img1">
+            <img class="img2" id="img1" src="img/img2.png" alt="img2">
+        </div>
+        <div class="img3">
+            <img class="img4" id="img2" src="img/img1.png" alt="img1">
+        </div>
+        <div class="text">
+            <h1>
+                wellcome to my site ...!
+            </h1>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quod ipsum repudiandae ex, enim praesentium tenetur nesciunt
+                suscipit et minus libero rerum illum fugiat architecto
+                dignissimos ullam, ut eaque facere eligendi.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Inventore, suscipit, perferendis sit sunt expedita
+                distinctio quia ducimus quam nisi impedit vitae iste
+                tempora eius enim. Accusantium vero hic architecto
+                repellendus.
+            </div>
+            <div class="all-product">
+                <div class="products">
+                    <div class="product-item">
+                        <img src="img/food-1.png" alt="png.img">
+                        <h3>product 1</h3>
+                        <p>this is the first</p>
+                        <p>this is the first</p>
+                        <br>
+                    </div>
+                    <div class="product-item">
+                        <img src="img/food-2.png" alt="png.img">
+                        <h3>product 1</h3>
+                        <p>this is the first</p>
+                        <p>this is the first</p>
+                        <br>
+                    </div>
+                    <div class="product-item">
+                        <img src="img/food-3.jpg" alt="png.img">
+                        <h3>product 1</h3>
+                        <p>this is the first</p>
+                        <p>this is the first</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <br>
+                <br>
+                <h2>this is footer</h2>
+                <p>designed by safe paradise</p>
+                <br>
+            </div>
+        </div>
+        <script>
+            /**@type {HTMLElement}*/
+            let img = document.getElementsByClassName('img1')[0];
+            let sun = document.getElementsByClassName('sun')[0];
+
+            console.log(sun);
+            window.addEventListener('scroll', function () {
+                console.log("thisis");
+                let value = window.scrollY;
+                img.style.marginTop = value * 0.30 + 'px';
+            });
+        </script>
+</body>
+
+</html>
